@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,9 @@ namespace Screpts.ConsumableItems
         [SerializeField] private protected float _weight;
         [SerializeField] private protected int _count;
         [SerializeField] private protected int _maxCount;
-
+        [SerializeField] private TMP_Text _text;
+       
+        public TMP_Text TextCount => _text;
         public Image Icon => _icon;
         public int Count => _count;
     }

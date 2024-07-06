@@ -1,20 +1,35 @@
 ﻿using Screpts.ConsumableItems;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Screpts.Inventory
 {
-    public class Cell : MonoBehaviour
+    public class Cell : MonoBehaviour//,IDropHandler
     {
-        [SerializeField] private TMP_Text _count;
-        [SerializeField] private Transform _container;
+        private TMP_Text _count;
         private Item _item;
         private int _id;
         private bool _isOccupied = false;
 
         public bool IsOccupied => _isOccupied;
-        public Transform Container => _container;
+
+        //public void OnDrop(PointerEventData eventData)
+        //{
+        //    Debug.Log("P1");
+        //    DragDrop dragDrop = eventData.pointerDrag.GetComponent<DragDrop>();
+        //    if (_isOccupied ==false)
+        //    {
+        //        Debug.Log("P2");
+        //        dragDrop.SetPosition(transform); 
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("P3");
+        //        dragDrop.PutBackPlace();
+        //    }
+        //}
 
         public void SetId(int id)
         {
@@ -23,6 +38,7 @@ namespace Screpts.Inventory
 
         public void SetItem(Item item)
         {
+            _count = item.TextCount;
             _item = item;
             _isOccupied = true;
             _item.Icon.gameObject.SetActive(true);

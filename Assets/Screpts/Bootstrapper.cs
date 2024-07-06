@@ -13,13 +13,14 @@ namespace Screpts
         [SerializeField] private OptionGreed _optionGreed;
         [SerializeField] private InventoryGreed _inventoryGreed;
         [SerializeField] private SpawnCell _spawnCell;
+        [SerializeField] private Canvas _canvas;
         private GameFactory _gameFactory;
         private AssetProvider _assetProvider;
 
         private void Start()
         {
             _assetProvider = new AssetProvider();
-            _gameFactory = new GameFactory(_assetProvider);
+            _gameFactory = new GameFactory(_assetProvider,_canvas);
             _optionGreed.Initialization();
             _spawnCell.Create(_optionGreed.PrefabCell, _optionGreed.Container, _optionGreed.Countcell);
             _inventoryGreed.AddListCells(_spawnCell.Cells);

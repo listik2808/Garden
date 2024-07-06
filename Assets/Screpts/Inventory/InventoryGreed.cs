@@ -7,6 +7,8 @@ namespace Screpts.Inventory
     {
         private List<Cell> _cells = new List<Cell>();
         
+        public List<Cell> Cells => _cells;
+
         public void AddListCells(List<Cell> cells)
         {
             _cells = cells;

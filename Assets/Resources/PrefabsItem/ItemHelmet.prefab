@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1292033008559454515}
   - component: {fileID: 5189937078815337902}
   - component: {fileID: 6032724708038645960}
-  - component: {fileID: 7167507623774006128}
   m_Layer: 5
   m_Name: ItemHelmet
   m_TagString: Untagged
@@ -54,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 8486903156791857457}
-  _canvasGroup: {fileID: 7167507623774006128}
+  _item: {fileID: 5189937078815337902}
 --- !u!114 &5189937078815337902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,18 +80,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856295895550107484}
   m_CullTransparentMesh: 1
---- !u!225 &7167507623774006128
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856295895550107484}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &3873131857356311204
 GameObject:
   m_ObjectHideFlags: 0

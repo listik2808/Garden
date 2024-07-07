@@ -87,7 +87,6 @@ GameObject:
   - component: {fileID: 8861963265892180339}
   - component: {fileID: 5049310446231654729}
   - component: {fileID: 1686531938754713312}
-  - component: {fileID: -4464316893754077909}
   m_Layer: 5
   m_Name: ItemAutomaticBullets
   m_TagString: Untagged
@@ -129,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 6472564318988763069}
-  _canvasGroup: {fileID: -4464316893754077909}
+  _item: {fileID: 5049310446231654729}
 --- !u!114 &5049310446231654729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,18 +154,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6055855783783479375}
   m_CullTransparentMesh: 1
---- !u!225 &-4464316893754077909
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6055855783783479375}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &8958900522344524847
 GameObject:
   m_ObjectHideFlags: 0

@@ -220,7 +220,6 @@ GameObject:
   - component: {fileID: 4272179876798401071}
   - component: {fileID: 5473164013389136251}
   - component: {fileID: 8834173616897217047}
-  - component: {fileID: -4121837555439972419}
   m_Layer: 5
   m_Name: ItemJaket
   m_TagString: Untagged
@@ -262,7 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 4272179876798401071}
-  _canvasGroup: {fileID: -4121837555439972419}
+  _item: {fileID: 8834173616897217047}
 --- !u!114 &8834173616897217047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,15 +280,3 @@ MonoBehaviour:
   _maxCount: 1
   _text: {fileID: 4157380797069414094}
   _armor: 3
---- !u!225 &-4121837555439972419
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8329303291406602070}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0

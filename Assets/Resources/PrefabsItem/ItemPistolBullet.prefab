@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 6194869581075820186}
   - component: {fileID: 6555707238102898991}
   - component: {fileID: 5455358414720902401}
-  - component: {fileID: -5734688661244229299}
   m_Layer: 5
   m_Name: ItemPistolBullet
   m_TagString: Untagged
@@ -187,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 6194869581075820186}
-  _canvasGroup: {fileID: -5734688661244229299}
+  _item: {fileID: 5455358414720902401}
 --- !u!114 &5455358414720902401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,18 +204,6 @@ MonoBehaviour:
   _count: 50
   _maxCount: 50
   _text: {fileID: 2979793063499920834}
---- !u!225 &-5734688661244229299
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2716448801512294527}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &2981698095303934204
 GameObject:
   m_ObjectHideFlags: 0

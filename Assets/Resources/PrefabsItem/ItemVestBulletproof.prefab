@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 7904441565478613127}
   - component: {fileID: 3147108918234663214}
   - component: {fileID: 7540358326213563689}
-  - component: {fileID: 8874744228888053037}
   m_Layer: 5
   m_Name: ItemVestBulletproof
   m_TagString: Untagged
@@ -128,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rectTransform: {fileID: 7904441565478613127}
-  _canvasGroup: {fileID: 8874744228888053037}
+  _item: {fileID: 7540358326213563689}
 --- !u!114 &7540358326213563689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,18 +146,6 @@ MonoBehaviour:
   _maxCount: 1
   _text: {fileID: 6296597924540434480}
   _armor: 10
---- !u!225 &8874744228888053037
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2345313106444644070}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &3767295409823198889
 GameObject:
   m_ObjectHideFlags: 0

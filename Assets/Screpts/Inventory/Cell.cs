@@ -32,5 +32,12 @@ namespace Screpts.Inventory
             else
                 _count.enabled = false;
         }
+
+        public void FreeCell()
+        {
+            _isOccupied = false;
+            _item = null;
+            _count.enabled = false;
+        }
     }
 }

@@ -13,9 +13,12 @@ namespace Screpts.ConsumableItems
             if (_cell.IsOccupied == false)
             {
                 GameObject dropped = eventData.pointerDrag;
-                DragDrop draggbleItem = dropped.GetComponent<DragDrop>();
-                draggbleItem.SetPosition(transform);
-                //SetItem();
+                if(dropped.TryGetComponent(out DragDrop draggbleItem))
+                {
+                    draggbleItem.SetPosition(transform);
+                    draggbleItem.SetCell(_cell);
+                    _cell.SetItem(draggbleItem.Item);
+                }
             }
         }
     }

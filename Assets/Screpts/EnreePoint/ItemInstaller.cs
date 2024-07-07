@@ -1,7 +1,7 @@
 ﻿using Screpts.Infrastructure.Factory;
 using Screpts.Inventory;
 
-namespace Screpts
+namespace Screpts.EnteePoint
 {
     public class ItemInstaller
     {

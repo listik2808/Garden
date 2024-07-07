@@ -199,11 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8192ccea0cfb04fa177ff258dd9b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nameItem: "\u0410\u043F\u0442\u0435\u0447\u043A\u0430"
   _icon: {fileID: 9042281123588795678}
   _weight: 1
   _count: 6
   _maxCount: 6
   _text: {fileID: 7588863990545991160}
+  _sprite: {fileID: 21300000, guid: a430e8e0257354b4cb40d8dff24c733b, type: 3}
+  _buttonItem: {fileID: 5321004539344812996}
+  _typeItem: 3
   _regenHp: 50
 --- !u!1 &8319498663496401522
 GameObject:
@@ -216,6 +220,8 @@ GameObject:
   - component: {fileID: 5928652680823652614}
   - component: {fileID: 8671421855886721174}
   - component: {fileID: 9042281123588795678}
+  - component: {fileID: 1670985305800743952}
+  - component: {fileID: 5321004539344812996}
   m_Layer: 5
   m_Name: IconMedical
   m_TagString: Untagged
@@ -280,3 +286,60 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1670985305800743952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319498663496401522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 9042281123588795678}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5321004539344812996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319498663496401522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cd5d101f0eee84c8c33e1c696b1d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1670985305800743952}

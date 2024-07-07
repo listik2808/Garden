@@ -25,6 +25,7 @@ namespace Screpts.Inventory
             _isOccupied = true;
             _count = item.TextCount;
             _item = item;
+            _item.OnDeleted += FreeCell;
             _item.Icon.gameObject.SetActive(true);
             _count.text = item.Count.ToString();
             if (_item.Count > 1)
@@ -35,6 +36,9 @@ namespace Screpts.Inventory
 
         public void FreeCell()
         {
+            if(_item != null)
+                _item.OnDeleted -= FreeCell;
+            
             _isOccupied = false;
             _item = null;
             _count.enabled = false;
